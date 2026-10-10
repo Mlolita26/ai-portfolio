@@ -121,6 +121,12 @@ h3 { font-size: 1.12rem; font-weight: 600; line-height: 1.3; }
 .step h3 { font-size: 1.05rem; }
 .step p { margin: 0; color: var(--muted); font-size: 15px; }
 
+.btn { display: inline-flex; align-items: center; gap: 8px; width: fit-content; font: 600 14px var(--sans); text-decoration: none; border-radius: 8px; padding: 9px 16px; border: 1px solid var(--accent); }
+.btn.primary { background: var(--accent); color: var(--bg); }
+.btn.primary:hover { filter: brightness(1.1); }
+.btn.ghost { background: transparent; color: var(--accent); padding: 6px 12px; font-size: 13.5px; }
+.btn.ghost:hover { background: var(--accent-soft); }
+.cta-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 20px; }
 footer { margin-top: 56px; padding-block: 28px 48px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
 @media (prefers-reduced-motion: reduce) { .shot img { transition: none; } }
 </style>
@@ -135,6 +141,7 @@ footer { margin-top: 56px; padding-block: 28px 48px; border-top: 1px solid var(-
         <div class="label">AI portfolio</div>
         <h1>Lolita Muller</h1>
         <p class="role"><b>I build knowledge products with generative AI:</b> narrated videos, web applications, websites, slide decks, visual explainers and datasets. Every output is checked against its source. Most take days, not weeks.</p>
+        <div class="cta-row"><a class="btn primary ask" data-product="a project" href="mailto:lolita.muller26@gmail.com">Contact me</a></div>
       </div>
       <div class="facts">
         <div><span class="k">Based in</span><span>Montpellier, France</span></div>
@@ -171,6 +178,7 @@ footer { margin-top: 56px; padding-block: 28px 48px; border-top: 1px solid var(-
           <div class="dur">5 min 33 s &middot; English &middot; captions</div>
           <p>Why national inventories need uncertainty analysis, and what a free IPCC Tier 2 calculator does, in five steps. Made for dissemination by a CGIAR project funded by the Global Methane Hub.</p>
           <div class="spec">Remotion &middot; Deepgram Aura-2 voice &middot; word-synced captions &middot; screen-recording camera moves &middot; &minus;14 LUFS master</div>
+        <div class="links"><a class="btn ghost ask" data-product="Narrated explainer video" data-example="Cattle emissions uncertainty calculator: overview" href="mailto:lolita.muller26@gmail.com">Request a similar video</a></div>
         </div>
       </article>
       <article class="item">
@@ -183,6 +191,7 @@ footer { margin-top: 56px; padding-block: 28px 48px; border-top: 1px solid var(-
           <div class="dur">6 min 53 s &middot; English &middot; captions</div>
           <p>What a taxonomy is, how a term is described, validated, published and used. Built for the MELIAF build-shop on the CGIAR climate adaptation taxonomy.</p>
           <div class="spec">Animated concept thread &middot; AI narration &middot; burned-in captions &middot; 16:9</div>
+        <div class="links"><a class="btn ghost ask" data-product="Narrated explainer video" data-example="A taxonomy for climate adaptation: concept explainer" href="mailto:lolita.muller26@gmail.com">Request a similar video</a></div>
         </div>
       </article>
     </div>
@@ -201,7 +210,7 @@ footer { margin-top: 56px; padding-block: 28px 48px; border-top: 1px solid var(-
           <h3>IPCC Tier 2 Livestock GHG Uncertainty Calculator</h3>
           <p>Monte Carlo uncertainty analysis for national cattle inventories. Data checks, distributions, correlations, sensitivity ranking and results in IPCC Table 3.3 format. English and French.</p>
           <div class="spec">R Shiny &middot; Monte Carlo (10,000+ iterations) &middot; 6 emission sources &middot; Excel, CSV and Word reports</div>
-          <div class="links"><a href="https://mlolita26.shinyapps.io/cattle-ghg-uncertainty/" target="_blank" rel="noopener">Open the app</a></div>
+          <div class="links"><a href="https://mlolita26.shinyapps.io/cattle-ghg-uncertainty/" target="_blank" rel="noopener">Open the app</a><a class="btn ghost ask" data-product="Web application" data-example="IPCC Tier 2 Livestock GHG Uncertainty Calculator" href="mailto:lolita.muller26@gmail.com">Request a similar app</a></div>
         </div>
       </article>
       <article class="item">
@@ -210,7 +219,7 @@ footer { margin-top: 56px; padding-block: 28px 48px; border-top: 1px solid var(-
           <h3>Climate Taxonomy Brain</h3>
           <p>Highlights CGIAR climate adaptation terms and synonyms as you type, and scores the impact pathway of the text.</p>
           <div class="spec">R &middot; term and synonym matching &middot; impact-pathway rule</div>
-          <div class="links"><a href="https://mlolita26.github.io/climate-taxonomy-brain/" target="_blank" rel="noopener">Open the tool</a></div>
+          <div class="links"><a href="https://mlolita26.github.io/climate-taxonomy-brain/" target="_blank" rel="noopener">Open the tool</a><a class="btn ghost ask" data-product="Web application" data-example="Climate Taxonomy Brain" href="mailto:lolita.muller26@gmail.com">Request a similar tool</a></div>
         </div>
       </article>
       <article class="item">
@@ -219,7 +228,7 @@ footer { margin-top: 56px; padding-block: 28px 48px; border-top: 1px solid var(-
           <h3>Climate Adaptation Taxonomy: Review &amp; Enrich</h3>
           <p>A review application where experts check and enrich taxonomy terms after signing in.</p>
           <div class="spec">Web app &middot; sign-in &middot; structured term review</div>
-          <div class="links"><a href="https://meliaf-taxonomy-app.vercel.app" target="_blank" rel="noopener">Open the app</a></div>
+          <div class="links"><a href="https://meliaf-taxonomy-app.vercel.app" target="_blank" rel="noopener">Open the app</a><a class="btn ghost ask" data-product="Web application" data-example="Climate Adaptation Taxonomy: Review &amp; Enrich" href="mailto:lolita.muller26@gmail.com">Request a similar app</a></div>
         </div>
       </article>
     </div>
@@ -238,7 +247,7 @@ footer { margin-top: 56px; padding-block: 28px 48px; border-top: 1px solid var(-
           <h3>Agroecology Evidence Hub</h3>
           <p>A living evidence synthesis on agroecological practices: an interactive map of field comparisons, with filters and downloads.</p>
           <div class="spec">Evidence synthesis &middot; harmonised field records &middot; interactive map</div>
-          <div class="links"><a href="https://mlolita26.github.io/agroecology-evidence-hub/" target="_blank" rel="noopener">Visit the site</a></div>
+          <div class="links"><a href="https://mlolita26.github.io/agroecology-evidence-hub/" target="_blank" rel="noopener">Visit the site</a><a class="btn ghost ask" data-product="Website" data-example="Agroecology Evidence Hub" href="mailto:lolita.muller26@gmail.com">Request a similar website</a></div>
         </div>
       </article>
       <article class="item">
@@ -247,7 +256,7 @@ footer { margin-top: 56px; padding-block: 28px 48px; border-top: 1px solid var(-
           <h3>Le Vrai Vote</h3>
           <p>How the 2027 presidential candidates actually voted in Parliament, from official public data. Every fact links to its source.</p>
           <div class="spec">Multi-source pipeline &middot; Assemblée, Sénat, European Parliament &middot; GitHub Actions</div>
-          <div class="links"><a href="https://levraivote.fr" target="_blank" rel="noopener">Visit levraivote.fr</a></div>
+          <div class="links"><a href="https://levraivote.fr" target="_blank" rel="noopener">Visit levraivote.fr</a><a class="btn ghost ask" data-product="Website" data-example="Le Vrai Vote" href="mailto:lolita.muller26@gmail.com">Request a similar website</a></div>
         </div>
       </article>
       <article class="item">
@@ -256,7 +265,7 @@ footer { margin-top: 56px; padding-block: 28px 48px; border-top: 1px solid var(-
           <h3>CGIAR Climate Adaptation and Mitigation Taxonomy</h3>
           <p>The taxonomy published as a FAIR vocabulary, with stable identifiers and machine-readable downloads.</p>
           <div class="spec">SKOS &middot; JSON-LD &middot; CSV &middot; 739 concepts &middot; 982 synonyms &middot; 300 typed relations</div>
-          <div class="links"><a href="https://mlolita26.github.io/cgiar-climate-taxonomy/" target="_blank" rel="noopener">Visit the vocabulary</a></div>
+          <div class="links"><a href="https://mlolita26.github.io/cgiar-climate-taxonomy/" target="_blank" rel="noopener">Visit the vocabulary</a><a class="btn ghost ask" data-product="Website" data-example="CGIAR Climate Adaptation and Mitigation Taxonomy" href="mailto:lolita.muller26@gmail.com">Request a similar website</a></div>
         </div>
       </article>
     </div>
@@ -279,6 +288,7 @@ footer { margin-top: 56px; padding-block: 28px 48px; border-top: 1px solid var(-
         <h3>The Taxonauts: MELIAF Build Group 4</h3>
         <p>Working deck for a taxonomy build group: scope, agreed schema, release and next steps.</p>
         <div class="spec">PowerPoint (.pptx) &middot; custom logo &middot; 5 slides</div>
+        <div class="links"><a class="btn ghost ask" data-product="Slide deck" data-example="The Taxonauts: MELIAF Build Group 4" href="mailto:lolita.muller26@gmail.com">Request a slide deck</a></div>
       </div>
     </article>
   </section>
@@ -294,7 +304,7 @@ footer { margin-top: 56px; padding-block: 28px 48px; border-top: 1px solid var(-
         <h3>One term through the taxonomy</h3>
         <p>A guided, step-by-step walkthrough that follows one term through the schema, the governance flow and a domain taxonomy. Keyboard and click navigation.</p>
         <div class="spec">Single-file HTML &middot; animated scenes &middot; real term record</div>
-        <div class="links"><a href="https://mlolita26.github.io/meliaf-taxonomy-walkthrough/" target="_blank" rel="noopener">Open the walkthrough</a></div>
+        <div class="links"><a href="https://mlolita26.github.io/meliaf-taxonomy-walkthrough/" target="_blank" rel="noopener">Open the walkthrough</a><a class="btn ghost ask" data-product="Visual explainer" data-example="One term through the taxonomy" href="mailto:lolita.muller26@gmail.com">Request a similar explainer</a></div>
       </div>
     </article>
   </section>
@@ -319,6 +329,7 @@ footer { margin-top: 56px; padding-block: 28px 48px; border-top: 1px solid var(-
         <p>Terms, definitions, synonyms and relations structured from source documents and published in open formats. <a href="https://github.com/MLolita26/cgiar-climate-taxonomy" target="_blank" rel="noopener">See the repository</a></p>
       </div>
     </div>
+    <div class="cta-row"><a class="btn ghost ask" data-product="Dataset (AI-assisted data extraction)" href="mailto:lolita.muller26@gmail.com">Request a dataset</a></div>
   </section>
 
   <section id="method">
@@ -335,7 +346,7 @@ footer { margin-top: 56px; padding-block: 28px 48px; border-top: 1px solid var(-
 
   <footer>
     <span>Lolita Muller &middot; Montpellier, France</span>
-    <span><a href="https://github.com/MLolita26" target="_blank" rel="noopener">GitHub</a> &middot; lolita.muller26@gmail.com</span>
+    <span><a class="btn ghost ask" data-product="a project" href="mailto:lolita.muller26@gmail.com">Contact me</a> &nbsp; <a href="https://github.com/MLolita26" target="_blank" rel="noopener">GitHub</a> &middot; lolita.muller26@gmail.com</span>
   </footer>
 </div>
 
@@ -370,6 +381,19 @@ footer { margin-top: 56px; padding-block: 28px 48px; border-top: 1px solid var(-
     video.addEventListener('play', function () {
       document.querySelectorAll('.player video').forEach(function (other) { if (other !== video) other.pause(); });
     });
+  });
+  // Request buttons: open an e-mail to Lolita with the product named in the subject and a short brief to fill in.
+  document.querySelectorAll('a.ask').forEach(function (a) {
+    var product = a.getAttribute('data-product') || 'a project';
+    var example = a.getAttribute('data-example');
+    var general = product === 'a project';
+    var subject = general ? 'Project enquiry' : 'Request: ' + product + (example ? ' (like "' + example + '")' : '');
+    var NL = '\n';
+    var body = 'Hello Lolita,' + NL + NL +
+      (general ? 'I would like to discuss a project with you.' : 'I am interested in: ' + product + (example ? ', similar to "' + example + '"' : '') + '.') + NL + NL +
+      'About the project:' + NL + '- Organisation:' + NL + '- Topic and audience:' + NL + '- Size or length:' + NL +
+      '- Language (English / French):' + NL + '- Deadline:' + NL + '- Budget:' + NL + NL + 'Best regards,' + NL;
+    a.href = 'mailto:lolita.muller26@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
   });
   // Copy e-mail address (selectable text is the fallback).
   var b = document.getElementById('copyEmail');
